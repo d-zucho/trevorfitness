@@ -1,45 +1,56 @@
+'use client'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import TestButton from '@/components/TestButton'
-import { HERO_IMAGE, HERO_IMAGE_2, WITHIN_IMAGE } from '@/constants'
+import { Button } from '@/components/ui/button'
+import { WITHIN_IMAGE } from '@/constants'
 import Image from 'next/image'
+import { motion } from 'motion/react'
 
-const Hero = () => {
+const Hero2 = () => {
   return (
-    <section className='relative pt-40'>
-      <Image
-        src={HERO_IMAGE}
-        alt='Hero Image'
-        className='w-full h-auto object-cover brightness-70 mt-40'
-        fill
-      />
-      <MaxWidthWrapper>
-        <div className='relative'>
-          {/* text */}
-          <h1 className='text-[140px] font-oswald uppercase font-semibold leading-[0.99] text-white z-20 absolute inset-x-0 -top-28'>
+    <section className='relative h-[calc(100vh-80px)] z-0'>
+      <div className="absolute inset-x-0 h-[62vh] bottom-0 bg-[url('/hero2.png')] bg-cover bg-no-repeat bg-center -z-10" />
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, ease: 'easeInOut', delay: 0.5 }}
+        className='w-[300px] sm:w-[400px] absolute top-32 max-lg:left-1/2 max-lg:-translate-x-1/2 sm:top-[200px] md:top-40 lg:top-[50px] lg:left-1/2 lg:-translate-x-1/3 z-10 lg:w-[725px]'
+      >
+        <Image
+          src={WITHIN_IMAGE}
+          alt='Power from within'
+          width={700}
+          className='w-full'
+        />
+      </motion.div>
+
+      <div className='w-full relative z-20'>
+        <MaxWidthWrapper>
+          <motion.h1
+            initial={{ opacity: 0, x: -75 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: 'easeInOut' }}
+            className='text-center text-[70px] lg:text-left font-bold lg:text-[140px] sm:text-[114px] uppercase font-oswald leading-[1.15] whitespace-nowrap'
+          >
             Power <br /> from within
-          </h1>
-          {/* <h1 className='text-[120px] font-oswald uppercase font-semibold leading-[0.99] text-white z-20 drop-shadow-md drop-shadow-my-primary/80 absolute inset-x-0 top-0'>
-            Power <br /> from within
-          </h1> */}
-          <Image
-            src={WITHIN_IMAGE}
-            alt='Within Logo'
-            className='absolute -top-28 right-0 z-40 w-[550px] h-auto  mx-auto'
-          />
-          <div className='relative'></div>
-          {/* img wrapper */}
-          <div className='relative w-full h-[500px]'>
-            {/* <Image
-              src={HERO_IMAGE}
-              alt='Hero Image'
-              className='w-full h-auto object-cover brightness-70 mt-20'
-              fill
-            /> */}
+          </motion.h1>
+
+          <div className='mt-28 flex justify-center lg:justify-start'>
+            <div className='bg-gradient-to-br from-white/5 to-slate-200/10 backdrop-blur-xl rounded-lg p-8 max-w-md'>
+              {/* @ignore */}
+              <p className='font-medium text-white/80 text-lg md:text-2xl text-center lg:text-left mb-6'>
+                Personalized training for Real Results. <br />
+                Let's get started!
+              </p>
+              <Button className='font-bold px-10 py-7 w-full lg:w-auto text-base!'>
+                Get in touch
+              </Button>
+            </div>
           </div>
-        </div>
-      </MaxWidthWrapper>
+        </MaxWidthWrapper>
+      </div>
     </section>
   )
 }
 
-export default Hero
+export default Hero2

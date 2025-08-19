@@ -16,7 +16,7 @@ const HeroCard = ({ title, label }: HeroCardProps) => {
     //   transition={{ duration: 0.3, ease: 'easeInOut' }}
     //   className='p-8 bg-my-hero-card-bg h-full flex flex-col justify-between'
     // >
-    <div className='p-8 bg-my-hero-card-bg h-full flex flex-col justify-between max-lg:items-center hover:bg-[#373737] transition-all duration-500 ease-in-out group'>
+    <div className='p-8 bg-my-hero-card-bg h-full flex flex-col justify-between max-lg:items-center hover:bg-[#373737] transition-all duration-500 ease-in-out group hover:cursor-pointer'>
       <div className='flex flex-col gap-1'>
         <span className='uppercase font-archivo font-semibold text-my-secondary text-lg tracking-[5] max-lg:text-center'>
           {label}

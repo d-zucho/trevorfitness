@@ -1,4 +1,4 @@
-import { NavLink, THeroCard } from '@/lib/types'
+import { NavLink, TDetailCard, THeroCard } from '@/lib/types'
 import HeroImg from '@/public/hero.jpg'
 import HeroImg2 from '@/public/hero2.png'
 import WithinImg from '@/public/WITHIN.svg'
@@ -39,5 +39,23 @@ export const HERO_CARD_INFO: THeroCard[] = [
   {
     title: 'The Best Dietary Plans',
     label: 'Crossfit',
+  },
+]
+
+export const DETAIL_CARDS: TDetailCard[] = [
+  {
+    label: 'Gear',
+    alt: 'Gear',
+    image: '/cardImg1.png',
+  },
+  {
+    label: 'Accessories',
+    alt: 'Accessories',
+    image: '/cardImg2.png',
+  },
+  {
+    label: 'Workout Plans',
+    alt: 'Workout Plans',
+    image: '/cardImg3.png',
   },
 ]
