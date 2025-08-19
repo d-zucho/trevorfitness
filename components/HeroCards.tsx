@@ -1,14 +1,16 @@
+'use client'
 import { HERO_CARD_INFO } from '@/constants'
 import HeroCard from './HeroCard'
+import { motion } from 'motion/react'
 
 const HeroCards = () => {
   return (
-    <div className='w-full h-[265px] absolute inset-x-0 bottom-0 z-5 text-white'>
-      <div className='grid grid-cols-3 h-full'>
+    <div className='w-full h-[265px] bottom-0 z-5 text-white'>
+      <motion.div className='grid grid-cols-1 lg:grid-cols-3 h-full'>
         {HERO_CARD_INFO.map((card) => (
-          <HeroCard key={card.label} {...card} />
+          <HeroCard key={card.label} title={card.title} label={card.label} />
         ))}
-      </div>
+      </motion.div>
     </div>
   )
 }

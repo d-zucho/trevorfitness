@@ -1,7 +1,9 @@
+'use client'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import TestButton from '@/components/TestButton'
-import { HERO_IMAGE, HERO_IMAGE_2, WITHIN_IMAGE } from '@/constants'
+import { Button } from '@/components/ui/button'
+import { WITHIN_IMAGE } from '@/constants'
 import Image from 'next/image'
+import { motion } from 'motion/react'
 
 // xs: screens from 0px to 639px
 // sm: screens from 640px to 767px
@@ -12,33 +14,45 @@ import Image from 'next/image'
 
 const Hero2 = () => {
   return (
-    <section className='relative h-[calc(100vh_-_80px)]'>
-      <MaxWidthWrapper className=''>
-        <div className='bg-[url("/hero.jpg")] bg-center bg-cover w-full h-[500px] brightness-65 absolute inset-x-0 bottom-0 z-0'></div>
-        {/* <div className='absolute inset-0 z-10 flex items-start justify-end top-[65px] xl:right-[150px] max-w-[1600px]]'>
-          <Image
-            src={WITHIN_IMAGE}
-            alt='Within Image'
-            width={400}
-            height={250}
-            className='w-[700px] h-[200px]'
-          />
-        </div> */}
-        <div className='relative pt-5'>
-          <h1 className='text-[80px] max-md:mx-auto text-center md:text-left md:text-[112px] lg:text-[150px] font-oswald uppercase leading-[1.1] font-semibold block relative md:pt-[60px] lg:pt-0 w-fit'>
+    <section className='relative w-full h-[calc(100vh_-_80px)] z-0'>
+      <div className='bg-[url("/hero2.png")] bg-cover bg-no-repeat bg-center h-[60vh] absolute inset-x-0 bottom-0 -z-1' />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, ease: 'easeInOut', delay: 0.5 }}
+      >
+        <Image
+          src={WITHIN_IMAGE}
+          alt='Power from within'
+          width={700}
+          className='w-[300px] sm:w-[400px] absolute top-32 max-lg:left-1/2 max-lg:-translate-x-1/2 sm:top-[200px] md:top-40 lg:top-[50px] lg:left-1/2 lg:-translate-x-1/3 z-2 lg:w-[725px]'
+        />
+      </motion.div>
+      <div className='w-full relative z-3 max-sm:'>
+        <MaxWidthWrapper>
+          <motion.h1
+            initial={{ opacity: 0, x: -75 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: 'easeInOut' }}
+            className='text-center text-[70px] lg:text-left font-bold lg:text-[140px] sm:text-[114px]  uppercase font-oswald leading-[1.15] whitespace-nowrap'
+          >
             Power <br /> from within
-          </h1>
-          <div className='max-md:top-[260px] absolute inset-0 z-10 flex items-start max-md:items-end justify-end max-md:justify-center md:top-[125px] lg:top-[85px] xl:top-[65px] max-w-screen'>
-            <Image
-              src={WITHIN_IMAGE}
-              alt='Within Image'
-              width={400}
-              height={250}
-              className='w-[300px] md:w-[450px] lg:w-[600px] xl:w-[700px] xl:h-[200px]'
-            />
+          </motion.h1>
+
+          {/* <div className='bg-white/5 w-fit rounded-lg backdrop-blur-2xl mx-auto lg:mx-0 mt-40'> */}
+          <div className='bg-gradient-to-br from-slate-200/20 to-gray-50/5 w-fit rounded-lg backdrop-blur-md mx-auto lg:mx-0 mt-40'>
+            <div className='mt-8 relative bg-black/[2%] w-fit py-8 px-4 rounded-lg backdrop-blur-2xl flex flex-col gap-6 items-start'>
+              <p className='font-medium text-white/80 text-lg md:text-2xl text-center lg:text-left'>
+                Personalized training for Real Results. <br />
+                Let's get started!
+              </p>
+              <Button className='font-bold! px-10 py-[28px] text-base!  max-lg:w-2/3 max-lg:mx-auto '>
+                Get in touch
+              </Button>
+            </div>
           </div>
-        </div>
-      </MaxWidthWrapper>
+        </MaxWidthWrapper>
+      </div>
     </section>
   )
 }

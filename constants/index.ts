@@ -29,7 +29,7 @@ export const WITHIN_IMAGE = WithinImg
 
 export const HERO_CARD_INFO: THeroCard[] = [
   {
-    title: 'Improve Strength',
+    title: 'Improve Your Strength',
     label: 'Fitness',
   },
   {

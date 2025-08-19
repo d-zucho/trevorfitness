@@ -8,7 +8,7 @@ import MobileNav from './MobileNav'
 
 const Navbar = () => {
   return (
-    <header className='text-white h-[80px]'>
+    <header className='text-white h-[80px] z-10 relative bg-my-bg/40 backdrop-blur-2xl'>
       <MaxWidthWrapper>
         <nav className='py-5 flex items-center justify-between'>
           {/* logo */}

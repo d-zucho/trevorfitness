@@ -1,4 +1,5 @@
 import HeroCards from '@/components/HeroCards'
+import HeroCTA from '@/components/HeroCTA'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import TestButton from '@/components/TestButton'
 import { TextHoverEffect } from '@/components/ui/text-hover-effect'
@@ -14,16 +15,16 @@ import Image from 'next/image'
 
 const Hero3 = () => {
   return (
-    <section className='h-[calc(100vh_-_80px)] max-h-[calc(100vh_-_80px)] relative overflow-hidden'>
+    <section className='h-[calc(100vh_-_80px)] max-h-[calc(100vh_-_80px)] relative overflow-x-hidden'>
       <div className='relative w-full h-full'>
         {/* HERO TEXT START */}
         <MaxWidthWrapper className='relative h-fit'>
           <div className='relative pt-10 z-2'>
-            {/* <Image
+            <Image
               className='absolute md:w-[400px] lg:w-[500] xl:w-[690px] lg:h-[200px] xl:h-[261px] top-[85px] xl:left-[375px] md:left-[275px] opacity-75'
               alt='Within'
               src={WITHIN_IMAGE}
-            /> */}
+            />
 
             <h1 className='text-6xl text-center md:text-[100px] lg:text-[150px] font-bold font-oswald leading-[1.2]'>
               POWER
@@ -31,19 +32,20 @@ const Hero3 = () => {
               FROM WITHIN
             </h1>
             <div className='-mt-12 opacity-40 transition-opacity duration-400 ease-in-out flex justify-center items-center'>
-              <TextHoverEffect text='WITHIN' className='' />
+              {/* <TextHoverEffect text='WITHIN' className='' /> */}
             </div>
           </div>
         </MaxWidthWrapper>
         {/* HERO TEXT END */}
 
         {/* HERO IMAGE START */}
-        <div className='max-w-full relative  z-1'>
+        <div className='max-w-full relative  z-1 clear-start '>
           <Image
             src={HERO_IMAGE}
             alt='Hero Image'
-            className='w-full object-cover max-w-full h-[500px] saturate-100 brightness-90 -mt-17'
+            className='w-full object-cover max-w-full h-[700px] saturate-100 brightness-90 -mt-17'
           />
+          <HeroCTA />
         </div>
         <HeroCards />
       </div>
