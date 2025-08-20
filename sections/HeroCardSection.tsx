@@ -4,7 +4,7 @@ import React from 'react'
 
 const HeroCardSection = () => {
   return (
-    <div className='relative  z-10'>
+    <div className='relative'>
       {HERO_CARD_INFO.map((card) => (
         <div key={card.label}>
           <h3>{card.title}</h3>
