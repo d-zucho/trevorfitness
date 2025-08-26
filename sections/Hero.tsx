@@ -35,14 +35,14 @@ const Hero2 = () => {
             Power <br /> from within
           </motion.h1>
 
-          <div className='mt-28 flex justify-center lg:justify-start'>
+          <div className='mt-32 flex justify-center lg:justify-start'>
             <div className='bg-gradient-to-br from-white/5 to-slate-200/10 backdrop-blur-xl rounded-lg p-8 max-w-md'>
               {/* @ignore */}
               <p className='font-medium text-white/80 text-lg md:text-2xl text-center lg:text-left mb-6'>
                 Personalized training for Real Results. <br />
                 Let's get started!
               </p>
-              <Button className='font-bold px-10 py-7 w-full lg:w-auto text-base!'>
+              <Button className='font-bold px-10 py-5 w-full lg:w-auto text-base!'>
                 Get in touch
               </Button>
             </div>

@@ -61,7 +61,7 @@ const Hero2 = () => {
                 Personalized training for Real Results. <br />
                 Let's get started!
               </p>
-              <Button className='font-bold px-10 py-7  w-full lg:w-auto'>
+              <Button className='font-bold px-10 py-2  w-full lg:w-auto'>
                 Get in touch
               </Button>
             </div>

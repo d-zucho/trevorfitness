@@ -8,11 +8,14 @@ import HeroCardSection from './HeroCardSection'
 
 const HomeDetailsCards = () => {
   return (
-    <section className='relative overflow-hidden'>
+    <section className='relative overflow-hidden py-[100px]'>
       <MaxWidthWrapper>
-        <div className='grid grid-cols-1  lg:grid-cols-3 gap-4 lg:justify-between justify-items-center'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 justify-center md:grid-cols-3 gap-4  justify-items-center'>
           {DETAIL_CARDS.map((card) => (
-            <div key={card.label} className='relative w-[200px] lg:w-full '>
+            <div
+              key={card.label}
+              className='relative w-[200px] lg:w-full hover:scale-[102%] transition-all duration-300 ease-in-out rounded-lg'
+            >
               <Image
                 src={card.image}
                 alt={card.alt}
@@ -24,7 +27,7 @@ const HomeDetailsCards = () => {
                 <h3 className='text-base font-bold uppercase text-center text-card-title'>
                   {card.label}
                 </h3>
-                <ArrowRight className='text-card-title' />
+                <ArrowRight className='text-card-title shrink-0 sm:size-5' />
               </div>
             </div>
           ))}
