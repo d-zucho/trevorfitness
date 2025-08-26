@@ -6,6 +6,7 @@ import Hero2 from '@/sections/Hero2'
 import Hero3 from '@/sections/Hero3'
 import HeroCardSection from '@/sections/HeroCardSection'
 import HomeDetailsCards from '@/sections/HomeDetailsCards'
+import OurMission from '@/sections/OurMission'
 import OurMissionSection from '@/sections/OurMissionSection'
 import Image from 'next/image'
 
@@ -20,6 +21,7 @@ export default function Home() {
       <HomeCTA />
       <OurMissionSection />
       <PotentialCTA />
+      <OurMission />
     </main>
   )
 }
