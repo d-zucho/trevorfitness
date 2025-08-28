@@ -13,3 +13,9 @@ export type TDetailCard = {
   alt: string
   image: string
 }
+
+export type TMissionCard = {
+  title: string
+  description: string
+  icon: string
+}

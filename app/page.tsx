@@ -1,6 +1,7 @@
 import HeroCards from '@/components/HeroCards'
 import HomeCTA from '@/components/HomeCTA'
 import PotentialCTA from '@/components/PotentialCTA'
+import TestMission from '@/components/TestMission'
 import Hero from '@/sections/Hero'
 import Hero2 from '@/sections/Hero2'
 import Hero3 from '@/sections/Hero3'
