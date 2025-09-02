@@ -97,3 +97,33 @@ export const MISSION_CARDS: TMissionCard[] = [
     icon: '/icons/bars.svg',
   },
 ]
+
+export const ABOUT_STATS = [
+  {
+    title: 'Who is Trevor?',
+    description:
+      'As a passionate personal trainer, I believe in empowering\
+              individuals to achieve their fitness goals through personalized\
+              coaching and support.',
+    stats: [
+      {
+        stat: '2000+',
+        detail: 'Satisfied Clients',
+      },
+      {
+        stat: 10,
+        detail: 'Years of Experience',
+      },
+      {
+        stat: 15,
+        detail: 'Years in Fitness',
+      },
+    ],
+  },
+  {
+    title: 'Qualifications',
+    description:
+      'I’m a certified fitness trainer with over 10 years of experience, specializing in personal training and nutrition. I’m passionate about helping individuals transform their lives and aim to create a welcoming environment where everyone can thrive, regardless of fitness level.',
+    stats: [{ stat: 'ACE' }, { stat: 'NASM' }, { stat: 'CN' }],
+  },
+]

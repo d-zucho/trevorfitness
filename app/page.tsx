@@ -1,17 +1,16 @@
 import HeroCards from '@/components/HeroCards'
 import HomeCTA from '@/components/HomeCTA'
+import HomeCTA2 from '@/components/HomeCTA2'
+import OfferingScroll from '@/components/OfferingScroll'
 import PotentialCTA from '@/components/PotentialCTA'
-import TestMission from '@/components/TestMission'
+import { ABOUT_STATS } from '@/constants'
 import Hero from '@/sections/Hero'
-import Hero2 from '@/sections/Hero2'
-import Hero3 from '@/sections/Hero3'
-import HeroCardSection from '@/sections/HeroCardSection'
+import HomeAbout from '@/sections/HomeAbout'
 import HomeDetailsCards from '@/sections/HomeDetailsCards'
 import OurMission from '@/sections/OurMission'
-import OurMissionSection from '@/sections/OurMissionSection'
-import Image from 'next/image'
 
 export default function Home() {
+  console.log(ABOUT_STATS[0])
   return (
     <main className='bg-my-bg text-white'>
       <Hero />
@@ -20,9 +19,13 @@ export default function Home() {
       <HeroCards />
       <HomeDetailsCards />
       <HomeCTA />
-      <OurMissionSection />
+
       <PotentialCTA />
       <OurMission />
+      <OfferingScroll />
+      <HomeCTA2 />
+      <HomeAbout reverse={false} stat={ABOUT_STATS[0]} />
+      <HomeAbout reverse={true} stat={ABOUT_STATS[1]} />
     </main>
   )
 }

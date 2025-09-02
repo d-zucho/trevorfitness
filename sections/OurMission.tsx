@@ -11,10 +11,11 @@ const OurMission = () => {
       <MaxWidthWrapper>
         {/* <div className='h-10 w-40 bg-transparent bg-linear-[to_bottom_right,transparent_-10%,#D74D49_80%,transparent]'> */}
         {/* button 1 */}
-        <div className='relative z-0 w-fit bg-my-primary/10 border-2 border-my-primary/5 rounded-md px-8 py-4'>
+        {/* <div className='relative z-0 w-fit bg-my-primary/10 border-2 border-my-primary/5 rounded-md px-8 py-4'>
           <div className='absolute -z-10 inset-0 bg-gradient-to-br from-transparent via-[#d74d49]/80 to-transparent blur-xs rounded-md'></div>
           <span className='text-[20px] z-10'>Our Mission</span>
-        </div>
+        </div> */}
+
         {/* my-secondary = */}
 
         {/* button 2 */}
@@ -25,7 +26,7 @@ const OurMission = () => {
           </span>
         </div>
 
-        <div className='mt-5 flex flex-col gap-5 justify-center max-lg:items-center items-left '>
+        <div className='mt-5 flex flex-col gap-5 justify-center max-lg:items-center items-left relative'>
           <h3 className='text-4xl'>Empower Your Journey to a Healthier You</h3>
           <p className='text-my-off-white max-w-3xl max-lg:text-center'>
             At FitFusion Gym, our mission is to empower individuals of all ages

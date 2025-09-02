@@ -7,7 +7,10 @@
   --color-my-bg: #0a0a0a;
   --color-my-primary: #f47521;
   --color-my-secondary: #d74d49;
+  --color-text-secondary: #909090;
   --color-my-hero-card-bg: #242424;
+  --color-my-gray-500: #1d1d21;
+  --color-my-gray-700: #1f1f1f;
   --color-card-title: #191919;
   --color-my-off-white: #afafaf;
   --font-oswald: var(--font-oswald);
@@ -50,6 +53,18 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --radius-base: 10px;
+
+  /* animations */
+  --animate-moveRight: moveRight 50s linear infinite;
+  @keyframes moveRight {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(calc(-50% - 10px));
+    }
+  }
 }
 
 :root {

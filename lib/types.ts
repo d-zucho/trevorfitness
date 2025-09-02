@@ -19,3 +19,12 @@ export type TMissionCard = {
   description: string
   icon: string
 }
+
+export type TAboutStat = {
+  title: string
+  description: string
+  stats: {
+    stat: string | number
+    detail?: string
+  }[]
+}
