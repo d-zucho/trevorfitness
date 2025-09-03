@@ -8,9 +8,9 @@ import Hero from '@/sections/Hero'
 import HomeAbout from '@/sections/HomeAbout'
 import HomeDetailsCards from '@/sections/HomeDetailsCards'
 import OurMission from '@/sections/OurMission'
+import Testimonials from '@/sections/Testimonials'
 
 export default function Home() {
-  console.log(ABOUT_STATS[0])
   return (
     <main className='bg-my-bg text-white'>
       <Hero />
@@ -26,6 +26,7 @@ export default function Home() {
       <HomeCTA2 />
       <HomeAbout reverse={false} stat={ABOUT_STATS[0]} />
       <HomeAbout reverse={true} stat={ABOUT_STATS[1]} />
+      <Testimonials />
     </main>
   )
 }

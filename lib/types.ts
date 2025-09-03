@@ -28,3 +28,9 @@ export type TAboutStat = {
     detail?: string
   }[]
 }
+
+export type TTestimonial = {
+  name: string
+  message: string
+  label: string
+}

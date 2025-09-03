@@ -1,4 +1,10 @@
-import { NavLink, TDetailCard, THeroCard, TMissionCard } from '@/lib/types'
+import {
+  NavLink,
+  TDetailCard,
+  THeroCard,
+  TMissionCard,
+  TTestimonial,
+} from '@/lib/types'
 import HeroImg from '@/public/hero.jpg'
 import HeroImg2 from '@/public/hero2.png'
 import WithinImg from '@/public/WITHIN.svg'
@@ -125,5 +131,38 @@ export const ABOUT_STATS = [
     description:
       'I’m a certified fitness trainer with over 10 years of experience, specializing in personal training and nutrition. I’m passionate about helping individuals transform their lives and aim to create a welcoming environment where everyone can thrive, regardless of fitness level.',
     stats: [{ stat: 'ACE' }, { stat: 'NASM' }, { stat: 'CN' }],
+  },
+]
+
+export const TESTIMONIALS: TTestimonial[] = [
+  {
+    name: 'John Doe',
+    message: 'Trevor has changed my life for the better!',
+    label: '32, Male',
+  },
+  {
+    name: 'Jane Smith',
+    message: 'Trevor is incredibly knowledgeable and supportive.',
+    label: '46 Female',
+  },
+  {
+    name: 'Sam Wilson',
+    message: 'Trevor has created a welcoming community atmosphere here.',
+    label: '29, Male',
+  },
+  {
+    name: 'Alex Johnson',
+    message: "Trevor's training programs are top-notch!",
+    label: '35, Male',
+  },
+  {
+    name: 'Emily Davis',
+    message: "Trevor's approach is refreshing and effective!",
+    label: '28, Female',
+  },
+  {
+    name: 'Michael Brown',
+    message: "Trevor's personalized approach has made all the difference!",
+    label: '40, Male',
   },
 ]
