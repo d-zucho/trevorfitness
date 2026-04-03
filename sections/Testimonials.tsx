@@ -6,9 +6,11 @@ const Testimonials = () => {
   return (
     <section className='py-40'>
       <div className=''>
-        <h2 className='text-6xl font-bold font-oswald uppercase text-white'>
-          Testimonials
-        </h2>
+        <MaxWidthWrapper>
+          <h2 className='text-6xl font-bold font-oswald uppercase text-white'>
+            Testimonials
+          </h2>
+        </MaxWidthWrapper>
 
         <div className='w-full'>
           <InfiniteMovingCards

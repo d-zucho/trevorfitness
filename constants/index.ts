@@ -27,11 +27,48 @@ export const NAV_LINKS: NavLink[] = [
     label: 'Schedule',
   },
 ]
+export const MOBILE_NAV_LINKS: NavLink[] = [
+  {
+    href: '/',
+    label: 'Home',
+  },
+  {
+    href: '/about',
+    label: 'About',
+  },
+  {
+    href: '/services',
+    label: 'Services',
+  },
+  {
+    href: '/schedule',
+    label: 'Schedule',
+  },
+]
 
 // images
 export const HERO_IMAGE = HeroImg
 export const HERO_IMAGE_2 = HeroImg2
 export const WITHIN_IMAGE = WithinImg
+
+export const SOCIALS = [
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/trevorwoodard.fit/',
+    icon: 'icons/instagram.svg',
+    iconFill: '#FF0069',
+  },
+  {
+    label: 'X',
+    href: '/',
+    icon: 'icons/x.svg',
+  },
+  {
+    label: 'Mail',
+    href: '/',
+    icon: 'icons/mail.svg',
+  },
+]
 
 export const HERO_CARD_INFO: THeroCard[] = [
   {
