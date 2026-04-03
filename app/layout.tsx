@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Oswald, Archivo } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/header/Navbar'
+import Footer from '@/sections/Footer'
 
 const oswald = Oswald({
   variable: '--font-oswald',
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )

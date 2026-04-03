@@ -18,18 +18,18 @@ const HomeCTA2 = () => {
           {/* CARD TEXT */}
           <div className='flex items-center justify-between mx-10'>
             <div className='space-y-4'>
-              <h3 className='text-lg font-semibold'>
+              <h3 className='text-xl md:text-2xl max-sm:max-w-xs font-semibold'>
                 Ready to take the first step to a healthier you?
               </h3>
-              <p className='text-sm'>
+              <p className=''>
                 Let's set up your personalized fitness plan today!
               </p>
             </div>
-            <Button className='relative overflow-hidden'>
+            <Button className='relative overflow-hidden flex items-center justify-center px-8! py-5!'>
               <div className='bg-linear-to-b from-white to-10% blur-xs to-transparent absolute inset-0 rounded-md' />
-              <div className='bg-[linear-gradient(aa' />
-              {/* <div className='absolute border-t border-l blur-[2px] inset-0'></div>
-              <div className='bg-linear-to-t from-slate-900/80 to-20%  blur-[3px] to-transparent absolute inset-0 rounded-md' /> */}
+              {/* <div className='absolute border-t border-l blur-[2px] inset-0'></div> */}
+              {/* <div className='bg-linear-to-t from-slate-900/70 to-10% to-transparent absolute inset-0 rounded-md' /> */}
+              <div className='shadow-[inset_-3px_-6px_6px_0px_rgba(0,_0,_0,_0.3)] absolute inset-0' />
               Sign Up Today
             </Button>
           </div>
