@@ -1,6 +1,7 @@
 import {
   NavLink,
   TContactInfo,
+  TCredential,
   TDetailCard,
   THeroCard,
   TMissionCard,
@@ -221,5 +222,23 @@ export const CONTACT_INFO: TContactInfo[] = [
     icon: MapPin,
     label: 'Location',
     text: 'Orange County, CA (and Worldwide Online)',
+  },
+]
+
+export const CREDENTIALS_INFO: TCredential[] = [
+  {
+    title: 'NASM',
+    description: 'Pes specialist',
+    image: '/icons/nasm-icon.svg',
+  },
+  {
+    title: 'AFAA',
+    description: 'Certified Trainer',
+    image: '/icons/afaa-icon.svg',
+  },
+  {
+    title: 'CCS',
+    description: 'Certified Corrective Specialist',
+    image: '/icons/ccs-icon.svg',
   },
 ]

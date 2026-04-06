@@ -42,3 +42,9 @@ export type TContactInfo = {
   text: string
   label?: string
 }
+
+export type TCredential = {
+  title: string
+  description: string
+  image: string
+}
