@@ -1,5 +1,6 @@
 import {
   NavLink,
+  TContactInfo,
   TDetailCard,
   THeroCard,
   TMissionCard,
@@ -8,6 +9,7 @@ import {
 import HeroImg from '@/public/hero.jpg'
 import HeroImg2 from '@/public/hero2.png'
 import WithinImg from '@/public/WITHIN.svg'
+import { Mail, MapPin, Phone } from 'lucide-react'
 
 export const NAV_LINKS: NavLink[] = [
   {
@@ -201,5 +203,23 @@ export const TESTIMONIALS: TTestimonial[] = [
     name: 'Michael Brown',
     message: "Trevor's personalized approach has made all the difference!",
     label: '40, Male',
+  },
+]
+
+export const CONTACT_INFO: TContactInfo[] = [
+  {
+    icon: Mail,
+    label: 'Email Me',
+    text: 'trevor1234@gmail.com',
+  },
+  {
+    icon: Phone,
+    label: 'Call for Support',
+    text: '+1 (999) 123-4567',
+  },
+  {
+    icon: MapPin,
+    label: 'Location',
+    text: 'Orange County, CA (and Worldwide Online)',
   },
 ]

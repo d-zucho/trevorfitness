@@ -1,10 +1,10 @@
 import HeroCards from '@/components/HeroCards'
-import HomeCTA from '@/components/HomeCTA'
 import HomeCTA2 from '@/components/HomeCTA2'
 import OfferingScroll from '@/components/OfferingScroll'
 import PotentialCTA from '@/components/PotentialCTA'
 import { ABOUT_STATS } from '@/constants'
 import Hero from '@/sections/Hero'
+import ContactSection from '@/sections/home/Contact'
 import HomeAbout from '@/sections/HomeAbout'
 import HomeDetailsCards from '@/sections/HomeDetailsCards'
 import OurMission from '@/sections/OurMission'
@@ -18,7 +18,6 @@ export default function Home() {
 
       <HeroCards />
       <HomeDetailsCards />
-      <HomeCTA />
 
       <PotentialCTA />
       <OurMission />
@@ -27,6 +26,7 @@ export default function Home() {
       <HomeAbout reverse={false} stat={ABOUT_STATS[0]} />
       <HomeAbout reverse={true} stat={ABOUT_STATS[1]} />
       <Testimonials />
+      <ContactSection />
     </main>
   )
 }

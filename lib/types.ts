@@ -1,3 +1,5 @@
+import { LucideIcon } from 'lucide-react'
+
 export type NavLink = {
   href: string
   label: string
@@ -33,4 +35,10 @@ export type TTestimonial = {
   name: string
   message: string
   label: string
+}
+
+export type TContactInfo = {
+  icon: LucideIcon
+  text: string
+  label?: string
 }

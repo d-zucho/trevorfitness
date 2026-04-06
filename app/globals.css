@@ -15,6 +15,7 @@
   --color-my-off-white: #afafaf;
   --font-oswald: var(--font-oswald);
   --font-archivo: var(--font-archivo);
+  --color-card-bg: #18181b;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -156,4 +157,8 @@
 
 body {
   font-family: var(--font-archivo);
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold;
 }
