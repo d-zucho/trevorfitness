@@ -1,3 +1,4 @@
+import AboutCTA from '@/sections/about/AboutCTA'
 import AboutHero from '@/sections/about/AboutHero'
 import AboutSection from '@/sections/about/AboutSection'
 import Credentials from '@/sections/about/Credentials'
@@ -11,6 +12,7 @@ const AboutPage = () => {
       <AboutSection />
       <Credentials />
       <Methods />
+      <AboutCTA />
     </div>
   )
 }
