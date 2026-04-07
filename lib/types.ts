@@ -48,3 +48,8 @@ export type TCredential = {
   description: string
   image: string
 }
+
+export type TMethod = {
+  title: string
+  description: string
+}

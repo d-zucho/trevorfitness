@@ -11,6 +11,7 @@ import HeroImg from '@/public/hero.jpg'
 import HeroImg2 from '@/public/hero2.png'
 import WithinImg from '@/public/WITHIN.svg'
 import { Mail, MapPin, Phone } from 'lucide-react'
+import { title } from 'process'
 
 export const NAV_LINKS: NavLink[] = [
   {
@@ -240,5 +241,28 @@ export const CREDENTIALS_INFO: TCredential[] = [
     title: 'CCS',
     description: 'Certified Corrective Specialist',
     image: '/icons/ccs-icon.svg',
+  },
+]
+
+export const MY_METHODS = [
+  {
+    title: 'Kinetic Assessment',
+    description:
+      'We start with a deep-dive analysis of your biomechanics to identify imbalances before we ever touch a weight.',
+  },
+  {
+    title: 'Hyper-Periodization',
+    description:
+      'Custom programming that evolves weekly progress, ensuring you never plateau and always keep the body guessing.',
+  },
+  {
+    title: 'Metabolic Mastery',
+    description:
+      "Nutrition isn't a diet; it's fuel. We optimize your macros to match your trainingintensity and recovery needs.",
+  },
+  {
+    title: 'Strength Synergy',
+    description:
+      'Combining strength training and functional movements for a comprehensive approach to power and endurance.',
   },
 ]
