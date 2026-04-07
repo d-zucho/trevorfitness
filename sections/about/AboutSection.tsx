@@ -1,5 +1,6 @@
 'use client'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
+import { Quote } from 'lucide-react'
 import { motion } from 'motion/react'
 
 const AboutSection = () => {
@@ -66,7 +67,7 @@ const AboutSection = () => {
             <div className='bg-my-gray-700 rounded-xl p-8 md:p-10 relative'>
               {/* Large quote number */}
               <span className='font-oswald font-bold text-my-primary text-7xl leading-none select-none'>
-                99
+                <Quote className='size-10' />
               </span>
 
               {/* Quote */}

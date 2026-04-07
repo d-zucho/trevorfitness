@@ -58,7 +58,7 @@ export const WITHIN_IMAGE = WithinImg
 export const SOCIALS = [
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/trevorwoodard.fit/',
+    href: 'https://www.instagram.com/tonedbytrevor/',
     icon: 'icons/instagram.svg',
     iconFill: '#FF0069',
   },
