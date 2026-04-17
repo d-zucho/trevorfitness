@@ -5,6 +5,7 @@ import {
   TDetailCard,
   THeroCard,
   TMissionCard,
+  TPillar,
   TTestimonial,
 } from '@/lib/types'
 import HeroImg from '@/public/hero.jpg'
@@ -264,5 +265,41 @@ export const MY_METHODS = [
     title: 'Strength Synergy',
     description:
       'Combining strength training and functional movements for a comprehensive approach to power and endurance.',
+  },
+]
+
+export const PILLARS: TPillar[] = [
+  {
+    title: 'Elite Personal Training',
+    description:
+      'Precision-engineered 1-on-1 coaching. Every rep, every set, and every recovery period is optimized for your specific biomechanics and goals.',
+    facts: [
+      '1-on-1 focused sessions',
+      'Biometric Assessment',
+      'Form Correction & Safety',
+    ],
+    link: 'Explore Training',
+  },
+  {
+    title: 'Mindfulness & Recovery',
+    description:
+      'Balancing the body and mind. Integrating techniques for stress relief, sleep optimization, and recovery strategies to boost perfiormance and overall well-being.',
+    facts: [
+      'Guided Meditations',
+      'Sleep Hygiene Practices',
+      'Recovery Protocols',
+    ],
+    link: 'Discover Mindfulness',
+  },
+  {
+    title: 'Group Fitness Sessions',
+    description:
+      'Join a community while getting fit and healthy. Our high-energy classes are designed to make fitness fun and accessible for everyone, regardless of experience level.',
+    facts: [
+      'Variety of classes',
+      'Motivational Atmosphere',
+      'Dynamic Workouts',
+    ],
+    link: 'Join a class',
   },
 ]

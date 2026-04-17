@@ -53,3 +53,10 @@ export type TMethod = {
   title: string
   description: string
 }
+
+export type TPillar = {
+  title: string
+  description: string
+  facts: string[]
+  link: string
+}
