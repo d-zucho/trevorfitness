@@ -45,3 +45,5 @@ next-env.d.ts
 *.md
 /skills
 /claude
+/.claude
+/.claude/skills
