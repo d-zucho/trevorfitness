@@ -9,13 +9,16 @@
   --color-my-secondary: #d74d49;
   --color-text-secondary: #909090;
   --color-my-hero-card-bg: #242424;
+  --color-my-hero-card-hover: #373737;
   --color-my-gray-500: #1d1d21;
   --color-my-gray-700: #1f1f1f;
   --color-card-title: #191919;
   --color-my-off-white: #afafaf;
+  --color-stone: #909090;
   --font-oswald: var(--font-oswald);
   --font-archivo: var(--font-archivo);
   --color-card-bg: #18181b;
+  --color-my-card-icon-bg: #23181b;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -161,4 +164,19 @@ body {
 
 .section-title {
   @apply text-3xl md:text-4xl font-bold;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-moveRight,
+  .animate-scroll {
+    animation: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

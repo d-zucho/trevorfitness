@@ -5,17 +5,18 @@ import React from 'react'
 
 const MissionCard = ({ title, description, icon }: TMissionCard) => {
   return (
-    <div className='flex flex-col h-full bg-[#18181B] relative p-10 rounded-[10px] z-10'>
+    <div className='flex flex-col h-full bg-card-bg relative p-10 rounded-[10px] z-10'>
       <Image
         src='/dot_bg_card.svg'
-        alt='bg'
+        alt=''
+        aria-hidden='true'
         width={200}
         height={200}
         className='absolute top-1 left-1 opacity-40 z-1'
       />
       {/* icon */}
       <div className='flex justify-between items-center w-full z-20'>
-        <div className='p-4  rounded-[10px] bg-gradient-to-br from-[#23181B] to-my-secondary/60 shadow-inner shadow-my-primary'>
+        <div className='p-4 rounded-[10px] bg-gradient-to-br from-my-card-icon-bg to-my-secondary/60 shadow-inner shadow-my-primary'>
           <Image src={icon} alt={title} width={24} height={24} />
         </div>
         <ArrowUpRightIcon className='size-6 text-my-secondary' />

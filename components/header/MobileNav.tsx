@@ -20,7 +20,12 @@ const MobileNav = () => {
     <div>
       <Sheet>
         <SheetTrigger asChild>
-          <Menu size={24} />
+          <button
+            aria-label='Open navigation menu'
+            className='text-white hover:text-my-primary transition-colors duration-200'
+          >
+            <Menu size={24} aria-hidden='true' />
+          </button>
         </SheetTrigger>
         <SheetContent className='bg-my-bg'>
           <SheetHeader className='sr-only'>

@@ -37,9 +37,14 @@ const ContactForm = () => {
     },
   })
 
-  const onSubmit = (values: z.infer<typeof contactSchema>) => {
-    console.log(values)
-    // setLoading()
+  const onSubmit = async (values: z.infer<typeof contactSchema>) => {
+    setLoading(true)
+    try {
+      console.log(values)
+      // TODO: wire up API call here
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -101,7 +106,11 @@ const ContactForm = () => {
               render={({ field, fieldState }) => (
                 <Field>
                   <FieldLabel>Primary Goal</FieldLabel>
-                  <Select>
+                  <Select
+                    value={field.value}
+                    onValueChange={field.onChange}
+                    onOpenChange={() => field.onBlur()}
+                  >
                     <SelectTrigger className='min-w-full'>
                       <SelectValue placeholder='Select primary goal' />
                     </SelectTrigger>
@@ -139,8 +148,12 @@ const ContactForm = () => {
                 </Field>
               )}
             />
-            <Button type='submit' className='px-10 max-sm:w-full'>
-              Submit
+            <Button
+              type='submit'
+              className='px-10 max-sm:w-full'
+              disabled={loading}
+            >
+              {loading ? 'Sending...' : 'Submit'}
             </Button>
           </form>
         </Form>
