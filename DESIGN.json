@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-04-24T00:00:00Z",
+  "title": "Design System: Toned by Trevor",
+  "extensions": {
+    "colorMeta": {
+      "ignition-orange": {
+        "role": "primary",
+        "displayName": "Ignition Orange",
+        "canonical": "oklch(66% 0.19 45)",
+        "tonalRamp": ["#190800", "#3a1600", "#5c2700", "#863c00", "#b85200", "#f47521", "#ffaa70", "#ffd9b5"]
+      },
+      "drive-red": {
+        "role": "secondary",
+        "displayName": "Drive Red",
+        "canonical": "oklch(55% 0.18 25)",
+        "tonalRamp": ["#180404", "#360c0b", "#5e1717", "#872424", "#d74d49", "#e8807d", "#f5b0ae", "#fde6e5"]
+      },
+      "void-black": {
+        "role": "neutral",
+        "displayName": "Void Black",
+        "canonical": "oklch(6% 0.005 264)",
+        "tonalRamp": ["#0a0a0a", "#141414", "#1a1a1c", "#1f1f21", "#252527", "#2e2e30", "#424244", "#606062"]
+      },
+      "charcoal": {
+        "role": "neutral",
+        "displayName": "Charcoal",
+        "canonical": "oklch(12% 0.008 264)",
+        "tonalRamp": ["#0a0a0a", "#141416", "#18181b", "#1e1e21", "#252527", "#303033", "#484849", "#686869"]
+      },
+      "iron-gray": {
+        "role": "neutral",
+        "displayName": "Iron Gray",
+        "canonical": "oklch(13% 0.006 264)",
+        "tonalRamp": ["#0a0a0a", "#121214", "#1a1a1c", "#1f1f21", "#252527", "#303033", "#464648", "#666668"]
+      },
+      "smoked-steel": {
+        "role": "neutral",
+        "displayName": "Smoked Steel",
+        "canonical": "oklch(15% 0.004 264)",
+        "tonalRamp": ["#0a0a0a", "#141414", "#1a1a1c", "#242424", "#2e2e30", "#3c3c3e", "#525254", "#747476"]
+      },
+      "ash": {
+        "role": "neutral",
+        "displayName": "Ash",
+        "canonical": "oklch(72% 0.004 264)",
+        "tonalRamp": ["#1a1a1c", "#2c2c2e", "#3e3e40", "#525254", "#6e6e70", "#8c8c8e", "#afafaf", "#d0d0d2"]
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Stone",
+        "canonical": "oklch(60% 0.004 264)",
+        "tonalRamp": ["#181818", "#282828", "#383838", "#484848", "#606060", "#787878", "#909090", "#b0b0b0"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero section titles only. Oswald, uppercase, never below 60px." },
+      "headline": { "displayName": "Headline", "purpose": "Section headers. Oswald, uppercase." },
+      "title": { "displayName": "Title", "purpose": "Card titles, subsection heads. Archivo." },
+      "body": { "displayName": "Body", "purpose": "Paragraph content. Archivo. Max 65ch." },
+      "label": { "displayName": "Label", "purpose": "Tags, categories, fact-list items. Archivo uppercase." }
+    },
+    "shadows": [
+      { "name": "surface", "value": "0 2px 16px rgba(0,0,0,0.3)", "purpose": "Cards at rest." },
+      { "name": "raised", "value": "0 8px 32px rgba(0,0,0,0.5)", "purpose": "Cards on hover, elevated CTAs." },
+      { "name": "ignition-glow", "value": "0 0 20px rgba(244,117,33,0.25)", "purpose": "Primary CTA button hover only." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "easeOut", "purpose": "Default easing for all entrances and state transitions." },
+      { "name": "duration-fast", "value": "200ms", "purpose": "Hover state transitions (card lift, button color)." },
+      { "name": "duration-medium", "value": "400ms", "purpose": "Nav underline slide, button transition." },
+      { "name": "duration-entrance", "value": "550ms", "purpose": "Scroll-triggered section entrances." },
+      { "name": "stagger-children", "value": "150ms", "purpose": "Delay between staggered grid children." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main CTA. Wide, weighted, orange. Used for all primary actions: Get in Touch, Book Free Consultation, Submit.",
+      "html": "<button class=\"ds-btn-primary\">GET STARTED</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; background-color: #f47521; color: #ffffff; padding: 8px 40px; border-radius: 6px; font-family: 'Archivo', sans-serif; font-size: 14px; font-weight: 500; border: none; cursor: pointer; transition: background-color 0.4s ease-out, box-shadow 0.4s ease-out; letter-spacing: 0.02em; white-space: nowrap; height: 36px; } .ds-btn-primary:hover { background-color: rgba(244, 117, 33, 0.8); box-shadow: 0 0 20px rgba(244, 117, 33, 0.25); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(244, 117, 33, 0.5); }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action. Transparent, white border. Used as secondary CTA alongside Primary.",
+      "html": "<button class=\"ds-btn-outline\">CONTACT ME</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; background-color: transparent; color: #ffffff; padding: 8px 40px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.3); font-family: 'Archivo', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; height: 36px; transition: border-color 0.3s ease-out, background-color 0.3s ease-out; } .ds-btn-outline:hover { border-color: #f47521; background-color: rgba(244, 117, 33, 0.08); } .ds-btn-outline:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(244, 117, 33, 0.3); }"
+    },
+    {
+      "name": "Pillar / Service Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Used in the Services Pillars grid. Charcoal surface, stagger entrance, lifts on hover.",
+      "html": "<div class=\"ds-pillar-card\"><div class=\"ds-pillar-card__header\">Elite Personal Training</div><div class=\"ds-pillar-card__body\"><p class=\"ds-pillar-card__desc\">Precision-engineered 1-on-1 coaching optimized for your specific biomechanics and goals.</p><div class=\"ds-pillar-card__facts\"><div class=\"ds-pillar-card__fact\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#f47521\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg><span>1-on-1 focused sessions</span></div><div class=\"ds-pillar-card__fact\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#f47521\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg><span>Biometric Assessment</span></div><div class=\"ds-pillar-card__fact\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#f47521\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg><span>Form Correction &amp; Safety</span></div></div></div><div class=\"ds-pillar-card__footer\"><a class=\"ds-pillar-card__link\" href=\"#\">EXPLORE TRAINING</a></div></div>",
+      "css": ".ds-pillar-card { background-color: #18181b; border-radius: 12px; border: 1px solid rgba(255,255,255,0.06); padding: 24px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 2px 16px rgba(0,0,0,0.3); transition: box-shadow 0.3s ease-out, transform 0.2s ease-out; max-width: 360px; min-height: 340px; } .ds-pillar-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.5); transform: translateY(-4px); } .ds-pillar-card__header { font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 18px; color: #ffffff; line-height: 1.3; } .ds-pillar-card__desc { font-family: 'Archivo', sans-serif; font-size: 14px; color: #909090; line-height: 1.6; margin: 0; } .ds-pillar-card__facts { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; } .ds-pillar-card__fact { display: flex; align-items: center; gap: 10px; font-family: 'Archivo', sans-serif; font-size: 13px; color: rgba(255,255,255,0.7); letter-spacing: 0.04em; } .ds-pillar-card__footer { display: flex; justify-content: flex-end; margin-top: auto; padding-top: 16px; } .ds-pillar-card__link { font-family: 'Archivo', sans-serif; font-size: 12px; color: #f47521; text-decoration: none; letter-spacing: 0.06em; border-bottom: 1px solid rgba(244,117,33,0.4); padding-bottom: 2px; transition: border-color 0.3s ease; } .ds-pillar-card__link:hover { border-color: #f47521; }"
+    },
+    {
+      "name": "Mission Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Grid card used in Our Mission section. Features gradient icon bubble and dot-pattern decoration.",
+      "html": "<div class=\"ds-mission-card\"><div class=\"ds-mission-card__top\"><div class=\"ds-mission-card__icon\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg></div><svg class=\"ds-mission-card__arrow\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#d74d49\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"7\" y1=\"17\" x2=\"17\" y2=\"7\"/><polyline points=\"7 7 17 7 17 17\"/></svg></div><div class=\"ds-mission-card__content\"><h3 class=\"ds-mission-card__title\">Inclusive Community</h3><p class=\"ds-mission-card__desc\">Embracing diversity, fostering belonging. We celebrate the beauty of every fitness journey.</p></div></div>",
+      "css": ".ds-mission-card { background-color: #18181b; border-radius: 10px; padding: 40px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.3); transition: box-shadow 0.3s ease-out; } .ds-mission-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.5); } .ds-mission-card__top { display: flex; justify-content: space-between; align-items: center; } .ds-mission-card__icon { padding: 16px; border-radius: 10px; background: linear-gradient(to bottom right, #23181b, rgba(215,77,73,0.6)); box-shadow: inset 0 1px 4px rgba(244,117,33,0.2); } .ds-mission-card__arrow { flex-shrink: 0; } .ds-mission-card__content { display: flex; flex-direction: column; gap: 12px; margin-top: 16px; } .ds-mission-card__title { font-family: 'Archivo', sans-serif; font-size: 18px; font-weight: 600; color: #ffffff; margin: 0; } .ds-mission-card__desc { font-family: 'Archivo', sans-serif; font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; margin: 0; }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Contact form text input. Minimal dark style, orange-adjacent focus ring.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field__label\" for=\"ds-input-demo\">Name</label><input class=\"ds-input\" id=\"ds-input-demo\" type=\"text\" placeholder=\"Enter your name...\" /></div>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; width: 100%; } .ds-field__label { font-family: 'Archivo', sans-serif; font-size: 14px; font-weight: 500; color: #ffffff; } .ds-input { height: 36px; width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); color: #ffffff; font-family: 'Archivo', sans-serif; font-size: 14px; padding: 0 12px; outline: none; box-sizing: border-box; transition: border-color 0.2s ease, box-shadow 0.2s ease; } .ds-input::placeholder { color: #909090; } .ds-input:focus { border-color: rgba(255,255,255,0.4); box-shadow: 0 0 0 3px rgba(255,255,255,0.08); }"
+    },
+    {
+      "name": "Desktop Navigation",
+      "kind": "nav",
+      "refersTo": "button-primary",
+      "description": "Site header with frosted-glass backdrop, animated underline links, and primary CTA.",
+      "html": "<header class=\"ds-nav\"><div class=\"ds-nav__inner\"><a class=\"ds-nav__logo\" href=\"/\">TW</a><nav class=\"ds-nav__links\"><a class=\"ds-nav__link\" href=\"/\">Home</a><a class=\"ds-nav__link\" href=\"/about\">About</a><a class=\"ds-nav__link\" href=\"/services\">Services</a><a class=\"ds-nav__link\" href=\"/schedule\">Schedule</a></nav><button class=\"ds-nav__cta\">Contact</button></div></header>",
+      "css": ".ds-nav { height: 80px; background: rgba(10,10,10,0.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); position: relative; z-index: 10; color: #ffffff; border-bottom: 1px solid rgba(255,255,255,0.04); } .ds-nav__inner { max-width: 1280px; margin: 0 auto; padding: 0 80px; height: 100%; display: flex; align-items: center; justify-content: space-between; } .ds-nav__logo { color: #ffffff; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 16px; text-decoration: none; background: #f47521; padding: 6px 10px; border-radius: 4px; letter-spacing: 0.05em; } .ds-nav__links { display: flex; align-items: center; gap: 20px; } .ds-nav__link { color: #ffffff; text-decoration: none; font-family: 'Archivo', sans-serif; font-size: 14px; position: relative; padding-bottom: 2px; overflow: hidden; display: block; } .ds-nav__link::after { content: ''; position: absolute; bottom: 0; left: -100%; width: 100%; height: 2px; background: #f47521; border-radius: 9999px; transition: left 0.4s ease-out; } .ds-nav__link:hover::after { left: 0; } .ds-nav__cta { display: inline-flex; align-items: center; justify-content: center; background-color: #f47521; color: #ffffff; padding: 8px 32px; border-radius: 6px; font-family: 'Archivo', sans-serif; font-size: 14px; font-weight: 500; border: none; cursor: pointer; transition: background-color 0.4s ease-out, box-shadow 0.4s ease-out; } .ds-nav__cta:hover { background-color: rgba(244,117,33,0.8); box-shadow: 0 0 20px rgba(244,117,33,0.25); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Proving Ground",
+    "overview": "This is a space designed for people on the edge of a decision — curious, perhaps nervous, but ready to commit. The visual system is built around two ideas held in tension: Trevor's authority as an expert, and genuine accessibility for a first-time client. Heavyweight Oswald type at large scales communicates that he knows exactly what he is doing. Deliberate negative space and a near-black palette communicate that this is premium, not overwhelming.\n\nThe site is dark because its audience encounters it as a considered choice — usually at home, researching trainers, in a quiet moment of self-motivation. The darkness is not gym-chain aggression; it is focused calm. One flame-colored accent (Ignition Orange) marks every point of action and creates visual momentum without saturation overload.\n\nThis system explicitly rejects generic gym-chain aesthetics, corporate wellness sterility, and the hustle-funnel approach. The emotional arc of every page is: intrigue, then credibility, then inspiration, then contact — never urgency before trust.",
+    "keyCharacteristics": [
+      "Two-weight type scale: massive Oswald display vs. restrained Archivo body",
+      "One primary accent, used sparingly and treated as directional signal",
+      "Tonal dark layering from near-black to charcoal",
+      "Bold structural shadows that carve surfaces on hover",
+      "Scroll-triggered stagger entrances — no gratuitous choreography"
+    ],
+    "rules": [
+      { "name": "The One Flame Rule", "body": "Ignition Orange appears on no more than 15% of any given screen. Its scarcity is the signal.", "section": "colors" },
+      { "name": "The Warm-Only Rule", "body": "Both accents are warm-spectrum. Never introduce cool accents (blue, teal, purple).", "section": "colors" },
+      { "name": "The Oswald-Uppercase Contract", "body": "Oswald at Display and Headline scales is always uppercase. Mixed-case Oswald at large scales loses its authority.", "section": "typography" },
+      { "name": "The Scale Ratio Rule", "body": "Maintain a minimum 1.25x contrast ratio between adjacent hierarchy steps.", "section": "typography" },
+      { "name": "The Active Surface Rule", "body": "Shadows deepen in response to interaction, never at rest as decoration alone.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use Oswald uppercase at Display and Headline scales.",
+      "Do reserve Ignition Orange for CTAs, check-icons, and hierarchy markers — one dominant use per viewport section.",
+      "Do apply structural shadows that deepen on hover: Surface at rest, Raised on interaction.",
+      "Do vary section vertical padding for rhythm: py-20 for informational sections, py-32 for statement sections.",
+      "Do animate scroll entrances with whileInView + staggerChildren for grid sections.",
+      "Do ensure warm-accent elements hold WCAG AA contrast against their backgrounds."
+    ],
+    "donts": [
+      "Don't use gradient text (background-clip: text with a gradient). Use solid orange or white with weight/size for emphasis.",
+      "Don't build generic gym-chain aesthetics: primary red/blue/yellow palettes, stock-photo muscle imagery.",
+      "Don't use corporate wellness styling: white-dominant layouts, sterile card grids, clinical spacing.",
+      "Don't build hustle-funnel patterns: countdown timers, stacked testimonial walls, repeated aggressive CTAs.",
+      "Don't use border-left greater than 1px as a colored accent stripe on cards or list items.",
+      "Don't extend the nav backdrop-blur to cards or section dividers — it is structural and specific.",
+      "Don't place a CTA before credibility is established in the page flow.",
+      "Don't use Drive Red on primary CTAs."
+    ]
+  }
+}
