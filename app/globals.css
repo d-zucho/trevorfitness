@@ -15,7 +15,20 @@
   --color-my-off-white: #afafaf;
   --font-oswald: var(--font-oswald);
   --font-archivo: var(--font-archivo);
+  --font-space-mono: var(--font-space-mono);
   --color-card-bg: #18181b;
+
+  /* v2 home redesign — "In Your Corner" warm-anchored palette */
+  --color-v2-base: #0d0b0a; /* warm near-black page base */
+  --color-v2-surface: #1b1512; /* warm espresso card surface */
+  --color-v2-surface-2: #261d18; /* elevated warm surface */
+  --color-v2-line: #3a2f27; /* warm hairline / rails on dark */
+  --color-v2-ink: #ece5da; /* warm off-white body on dark */
+  --color-v2-muted: #a89b8c; /* warm stone, secondary text on dark */
+  --color-v2-paper: #e7dcc8; /* warm bone — softer so the light sections don't glare */
+  --color-v2-paper-ink: #211a15; /* dark ink on paper */
+  --color-v2-paper-muted: #5c5147; /* muted text on paper (AA) */
+  --color-v2-paper-line: #cdbfa8; /* hairline on paper */
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

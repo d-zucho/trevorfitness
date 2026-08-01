@@ -60,3 +60,25 @@ export type TPillar = {
   facts: string[]
   link: string
 }
+
+// v2 home — "Your First Few Weeks" partnership timeline
+export type TFirstWeek = {
+  marker: string // logbook notation, e.g. "WK 01"
+  title: string
+  description: string
+}
+
+// v2 about — "What I coach by" principles
+export type TPrinciple = {
+  label: string // short mono tag
+  title: string
+  description: string
+}
+
+// v2 services — the ways to work together
+export type TService = {
+  tag: string // short mono category tag
+  title: string
+  description: string
+  features: string[]
+}
