@@ -3,9 +3,12 @@ import {
   TContactInfo,
   TCredential,
   TDetailCard,
+  TFirstWeek,
   THeroCard,
   TMissionCard,
   TPillar,
+  TPrinciple,
+  TService,
   TTestimonial,
 } from '@/lib/types'
 import HeroImg from '@/public/hero.jpg'
@@ -265,6 +268,135 @@ export const MY_METHODS = [
     title: 'Strength Synergy',
     description:
       'Combining strength training and functional movements for a comprehensive approach to power and endurance.',
+  },
+]
+
+// v2 home — the partnership made visible, week by week
+export const FIRST_WEEKS: TFirstWeek[] = [
+  {
+    marker: 'WK 00',
+    title: 'The first conversation',
+    description:
+      'We talk before anything else. No workout, no weigh-in, no pressure. Just where you are now and where you want to be.',
+  },
+  {
+    marker: 'WK 01',
+    title: 'Your starting line',
+    description:
+      'A movement assessment and a plan built around your body, your schedule, and your goals. We start at your level, not someone else’s.',
+  },
+  {
+    marker: 'WK 02',
+    title: 'Finding your rhythm',
+    description:
+      'We dial the plan in as we learn what works for you. Form comes first; the weight can wait until it feels right.',
+  },
+  {
+    marker: 'WK 04',
+    title: 'The first check-in',
+    description:
+      'We look at what has changed together, and it is usually more than you expected. Then we adjust and keep going.',
+  },
+  {
+    marker: 'ONWARD',
+    title: 'Momentum',
+    description:
+      'The plan grows with you. This is where it stops feeling like starting and starts feeling like yours.',
+  },
+]
+
+// v2 services — the ways to work together (placeholder copy, warm partner voice)
+export const V2_SERVICES: TService[] = [
+  {
+    tag: 'One-on-one',
+    title: 'Personal Training',
+    description:
+      'Just you and me. Every session, plan, and check-in is built around your body, your goals, and the week you are actually having.',
+    features: [
+      'Sessions shaped to your level',
+      'A plan that adjusts every week',
+      'Form first, weight later',
+    ],
+  },
+  {
+    tag: 'Balance',
+    title: 'Recovery & Mindset',
+    description:
+      'Training is only half of it. We work on the sleep, stress, and habits that decide whether any of the rest actually sticks.',
+    features: [
+      'Sleep and stress routines',
+      'Simple recovery protocols',
+      'Habits that survive a real week',
+    ],
+  },
+  {
+    tag: 'Together',
+    title: 'Small-Group Sessions',
+    description:
+      'Train alongside a few others at your level. The accountability of a group, without ever feeling lost in a crowd.',
+    features: [
+      'Small, level-matched groups',
+      'Still real personal attention',
+      'A room that is actually welcoming',
+    ],
+  },
+]
+
+// v2 services — the baseline that comes with every option
+export const V2_SERVICE_INCLUDES: string[] = [
+  'A plan made for you, not a template',
+  'Weekly check-ins so you are never guessing',
+  'Message access between sessions',
+  'Honest coaching, and no upsells',
+]
+
+// v2 about — the coaching principles (placeholder copy, warm partner voice)
+export const ABOUT_PRINCIPLES: TPrinciple[] = [
+  {
+    label: 'Form',
+    title: 'Form before weight',
+    description:
+      'We earn every load. If a movement is not clean, we do not add to it. Progress you cannot control is not progress.',
+  },
+  {
+    label: 'Bespoke',
+    title: 'Your plan, not a template',
+    description:
+      'No two bodies, schedules, or histories are the same, so no two programs I write are either. Yours is built around your life.',
+  },
+  {
+    label: 'Consistency',
+    title: 'Consistency over intensity',
+    description:
+      'The best session is the one you will come back to on Thursday. We build habits that survive a bad week, not just a good one.',
+  },
+  {
+    label: 'Honesty',
+    title: 'Honest coaching, always',
+    description:
+      'I will tell you what is working and what is not. You will always know why we are doing what we are doing.',
+  },
+]
+
+// v2 home — curated, beginner-relatable proof (not a testimonial wall)
+export const V2_TESTIMONIALS: TTestimonial[] = [
+  {
+    name: 'Priya R.',
+    message:
+      'I had quit two gyms before this. Trevor never once made me feel behind. He met me where I was and I actually kept showing up.',
+    label: 'Started at 34, nine months in',
+  },
+  {
+    name: 'Marcus T.',
+    message:
+      'I thought I needed to get in shape before hiring a trainer. Turns out that is exactly backwards. Week one felt doable, and that changed everything.',
+    label: 'Started at 41, one year in',
+  },
+  {
+    name: 'Dana L.',
+    message:
+      'What stuck was the check-ins. Someone actually noticed the small wins with me. I have never had that with fitness before.',
+    label: 'Started at 28, six months in',
   },
 ]
 
